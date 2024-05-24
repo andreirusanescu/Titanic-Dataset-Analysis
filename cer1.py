@@ -2,17 +2,18 @@ import numpy as np
 import pandas as pd
 
 data = pd.read_csv('train.csv')
-print(f'There are {len(data.columns)} columns')
+print(f'Sunt {len(data.columns)} coloane')
+print()
+print('Tipurile de date pentru fiecare coloana')
 print(data.dtypes)
 print()
-num_missing = data.isnull().sum()
-print(f'Missing values for each column')
-print(num_missing)
+missing_values = data.isnull().sum()
+print(f'Valorile lipsa pentru fiecare coloana')
+print(missing_values)
 print()
-print(f'There are {len(data)} lines')
+print(f'In total sunt {len(data)} linii')
 ret = data.duplicated().sum()
-
 if ret:
-    print('There are duplicate rows')
+    print(f'Sunt {ret} linii duplicate')
 else:
-    print('There are no duplicate rows')
+    print('Nu sunt linii duplicate')
