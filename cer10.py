@@ -11,7 +11,7 @@ data['Alone'] = (data['Relatives'] == 0).astype(int)
 plt.hist([data[data['Alone'] == 0]['Survived'],
           data[data['Alone'] == 1]['Survived']],
           color = ['skyblue', 'mediumseagreen'],
-          label = ['No relatives', 'Has relatives'])
+          label = ['Nu are rude', 'Are rude'])
 plt.xlabel('Supravietuire')
 plt.ylabel('Pasageri')
 plt.title('Cum influenteaza rudele de pe vas rata de supravietuire a unui pasager ?')
