@@ -7,7 +7,7 @@ bins = [0, 20, 40, 60, data['Age'].max()]
 # indexul corespunzator fiecarui interval
 index = [0, 1, 2, 3]
 
-data['age_index'] = pd.cut(data['Age'], bins = bins, labels=index)
+data['age_index'] = pd.cut(data['Age'], bins = bins, labels = index)
 
 # frecventa valorilor varstelor
 age_count = data['age_index'].value_counts().sort_index()
