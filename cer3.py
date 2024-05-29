@@ -19,5 +19,5 @@ for column in data:
     plt.title(f'Histograma pentru {column}')
     plt.xlabel('Valoare')
     plt.ylabel('Frecventa')
-    plt.show()
+    plt.savefig(f'cer3_{it}.png')
     it += 1
