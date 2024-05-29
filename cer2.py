@@ -30,13 +30,13 @@ print(f'Barbati: {males}%')
 print(f'Femei: {females}%')
 
 graph_data = {
-    'Supravietuitori': survival_rate,
-    'Nesupravietuitori': 100 - survival_rate,
-    'Clasa I': first_class,
-    'Clasa II': second_class,
-    'Clasa III': third_class,
-    'Barbati': males,
-    'Femei': females
+	'Supravietuitori': survival_rate,
+	'Nesupravietuitori': 100 - survival_rate,
+	'Clasa I': first_class,
+	'Clasa II': second_class,
+	'Clasa III': third_class,
+	'Barbati': males,
+	'Femei': females
 }
 
 categories = ['Supravietuitori', 'Nesupravietuitori', 'Clasa I', 'Clasa II', 'Clasa III', 'Barbati', 'Femei']
@@ -59,7 +59,7 @@ ax.set_title('Distributia supravietuitorilor, claselor si a genurilor')
 
 # Valorile de deasupra barelor, in procente
 for bar in bars:
-    yval = bar.get_height()
-    ax.text(bar.get_x() + bar.get_width() / 3, yval, f'{yval}%', va='bottom')
+	yval = bar.get_height()
+	ax.text(bar.get_x() + bar.get_width() / 3, yval, f'{yval}%', va='bottom')
 
-plt.show()
+plt.savefig('cer2.png')
