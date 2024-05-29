@@ -11,9 +11,7 @@ for column in filtered.index:
     print(f"{column}: {filtered[column]} valori lispsa, {round(proportion[column], 2)}%")
 
 survivers = data.groupby('Survived')
-
 print()
-
 for column in filtered.index:
     print(column)
     for survived, group in survivers:
